@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+/* Global styles */
+body {
+   font-family: 'Ubuntu', sans-serif;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   background: linear-gradient(135deg,
+         #2c3e50,
+         #4ca1af);
+   transition: background 0.3s ease;
+}
+
+.app {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   width: 100%;
+}
+
+.header {
+   text-align: center;
+   margin-bottom: 15px;
+}
+
+h1 {
+   margin: 0;
+   color: #00b3ff;
+   font-size: 3rem;
+}
+
+.controls {
+   margin-top: 10px;
+}
+
+.controls .toggle-mode,
+.controls .toggle-ai {
+   background: transparent;
+   border: none;
+   cursor: pointer;
+   font-size: 24px;
+   color: #333;
+   margin: 0 10px;
+   transition: color 0.3s ease;
+}
+
+/* Dark Mode Styles */
+.dark {
+   color: #eee;
+}
+
+.dark .header h1 {
+   color: #eee;
+}
+
+.dark .controls .toggle-mode,
+.dark .controls .toggle-ai {
+   color: #fff;
+}
+
+/* Dark Mode - Square */
+.dark .square {
+   background-color: #444;
+   color: #fff;
+}
+
+.dark .board-container {
+   background-color: rgba(34, 34, 34, 0.9);
+   color: #eee;
+}
+
+.dark .reset-button {
+   background-color: #3498db;
+   color: white;
+}
+
+.dark .reset-button:hover {
+   background-color: #2980b9;
+}
+
+.dark .square:hover {
+   background-color: rgba(255, 255, 255, 0.2);
+   box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2);
+}
